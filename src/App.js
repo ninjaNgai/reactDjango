@@ -1,17 +1,20 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import paypalLogo from "./paypal-logo-color.svg";
-import "./App.css";
-import NavigationBar from "./components/Navigation";
-import TabDash from "./components/TabDash";
+import React, { Component } from 'react';
+import reactLogo from './logo-react.svg';
+import djangoLogo from './logo-django.svg';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavigationBar />
-        <img src={paypalLogo} className="PayPal-logo" alt="PayPal" />
-        <TabDash />
+        <header className="App-header">
+          <img src={reactLogo} className="App-logo" alt="React logo" />
+          <img src={djangoLogo} className="App-logo" alt="Django logo" />
+          <h1 className="App-title">Welcome to the React-Django app</h1>
+        </header>
+        <p className="App-intro">
+          I'm a blank canvas waiting for a coder's touch!
+        </p>
       </div>
     );
   }
